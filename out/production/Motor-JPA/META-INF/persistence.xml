@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+
+    <persistence-unit name="boot2">
+
+
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>lk.ijse.motor.entity.Customer</class>
+        <class>lk.ijse.motor.entity.Invoice</class>
+        <class>lk.ijse.motor.entity.Vehicle</class>
+        <class>lk.ijse.motor.entity.Part</class>
+        <class>lk.ijse.motor.entity.CustomerDetail</class>
+        <class>lk.ijse.motor.entity.InvoiceDetail</class>
+
+
+
+    </persistence-unit>
+
+</persistence>

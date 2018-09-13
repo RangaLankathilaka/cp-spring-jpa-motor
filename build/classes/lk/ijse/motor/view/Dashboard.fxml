@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="815.0" prefWidth="1378.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.motor.controller.DashboardController">
+   <children>
+      <Pane fx:id="root" layoutX="330.0" onMouseEntered="#playMouseEnterAnimation" prefHeight="843.0" prefWidth="1058.0" />
+      <ImageView fitHeight="835.0" fitWidth="1387.0" opacity="0.07" pickOnBounds="true">
+         <image>
+            <Image url="@../assest/chain.jpg" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="chartsell" layoutX="795.0" layoutY="302.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="426.0" prefWidth="569.0" title="most sell parts" />
+      <Label layoutX="592.0" layoutY="306.0" prefHeight="24.0" prefWidth="188.0" text="Less Qty Parts">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="534.0" layoutY="351.0" opacity="0.8" prefHeight="328.0" prefWidth="272.0" style="-fx-background-color: ff3333; -fx-background-radius: 20px;" />
+      <JFXListView fx:id="listview" layoutX="560.0" layoutY="369.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" opacity="0.82" prefHeight="292.0" prefWidth="220.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXListView>
+      <Pane layoutX="463.0" layoutY="65.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" opacity="0.59" prefHeight="115.0" prefWidth="310.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="73.0" layoutX="22.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/money.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="799.0" layoutY="65.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" opacity="0.73" prefHeight="115.0" prefWidth="310.0" style="-fx-background-color: green;" />
+      <Pane layoutX="1153.0" layoutY="65.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" opacity="0.73" prefHeight="115.0" prefWidth="188.0" style="-fx-background-color: yellow;">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="87.0" layoutX="18.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bikeicon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="vehicleCountlable" layoutX="108.0" layoutY="11.0" prefHeight="74.0" prefWidth="73.0" text="0" wrapText="true">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="843.0" fitWidth="330.0" opacity="0.16" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assest/blue.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="home" fitHeight="133.0" fitWidth="114.0" layoutX="88.0" layoutY="113.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="customer" fitHeight="128.0" fitWidth="114.0" layoutX="97.0" layoutY="343.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="part" fitHeight="125.0" fitWidth="114.0" layoutX="97.0" layoutY="554.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/part.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

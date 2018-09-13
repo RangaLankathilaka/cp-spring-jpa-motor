@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.motor.controller.testcon">
+   <children>
+      <JFXBadge layoutX="155.0" layoutY="137.0" />
+      <JFXButton fx:id="sdds" layoutX="155.0" layoutY="148.0" prefHeight="84.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>
